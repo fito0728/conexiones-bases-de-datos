@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compilar mongo-cxx",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "-I", "C:\\Users\\Senayork\\vcpkg\\installed\\x64-windows\\include",
+                "-L", "C:\\Users\\Senayork\\vcpkg\\installed\\x64-windows\\lib",
+                "-lmongocxx",
+                "-lbsoncxx",
+                "-o", "main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
